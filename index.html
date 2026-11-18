@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Якутия · просмотр и сравнение</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script defer src="app.js?v=20261118-pages"></script></head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="brandmark">Я</span><span>Якутия <small>ЛАБОРАТОРИЯ ИЗОБРАЖЕНИЯ</small></span></a><div class="top-actions"><span class="live"><i></i> Просмотр и сравнение</span></div></header>
+<main>
+<section class="workspace" id="workspace">
+<div class="title-row"><div><p class="eyebrow">ПАНОРАМЫ A4</p><h1>Ищем характер линии.</h1><p class="subtitle">Композиция остаётся. Сравниваем рисунок, цвет и анатомию.</p></div><a class="brief" href="https://miskovetsv.github.io/orion-moodboard/design-code/yakuty.html#styles" target="_blank" rel="noopener">Открыть ТЗ ↗</a></div>
+<div class="toolbar"><div class="segmented" aria-label="Режим просмотра"><button data-mode="stack" class="active">Сравнение</button><button data-mode="wipe">Шторка</button><button data-mode="single">Один кадр</button></div><div class="zoom-tools"><button id="zoomOut" title="Уменьшить (−)" aria-label="Уменьшить">−</button><output id="zoomLabel">100%</output><button id="zoomIn" title="Увеличить (+)" aria-label="Увеличить">+</button><button id="fit" title="Вписать целиком (0)">Вписать</button><button id="actual" title="Один пиксель изображения = один пиксель экрана (1)">1:1</button><button id="full" title="Полноэкранный режим (F)" aria-label="Полноэкранный режим">⛶</button></div></div>
+<div class="viewer" id="viewer">
+<div class="fullscreen-tools"><button id="fsOut" aria-label="Уменьшить">−</button><button id="fsIn" aria-label="Увеличить">+</button><button id="fsFit">Вписать</button><button id="fsExit">Выйти ⤢</button></div>
+<div class="pane" id="paneA"><div class="pane-head"><span class="tag">A</span><select id="selectA" aria-label="Изображение A"></select><span class="dimensions" id="sizeA"></span></div><div class="surface" id="surfaceA"><div class="image-layer"><img id="imageA" alt="Изображение A" draggable="false"></div><span class="loading" id="loadA">Загрузка…</span></div></div>
+<div class="pane" id="paneB"><div class="pane-head"><span class="tag accent">B</span><select id="selectB" aria-label="Изображение B"></select><span class="dimensions" id="sizeB"></span><a id="download" download title="Скачать оригинал">↓ Оригинал</a></div><div class="surface" id="surfaceB"><div class="image-layer"><img id="imageB" alt="Изображение B" draggable="false"></div><div class="wipe-layer" id="wipeLayer"><img id="wipeImage" alt="Изображение A для наложения" draggable="false"></div><div class="wipe-line" id="wipeLine"></div><span class="loading" id="loadB">Загрузка…</span></div></div>
+<div class="wipe-control" id="wipeControl"><span>A</span><input id="wipeRange" type="range" min="0" max="100" value="50" aria-label="Положение шторки"><span>B</span></div>
+</div>
+<div class="viewer-foot"><span id="viewHint">Колесо — масштаб · потяните картинку для перемещения · двойной клик — приблизить</span></div>
+<section class="variant-description"><h2 id="variantTitle"></h2><p id="variantNote"></p></section>
+<section class="variants"><div class="section-heading"><h2>Варианты <span id="variantCount"></span></h2><span>Выбор меняет кадр B</span></div><div id="gallery" class="gallery"></div></section>
+</section>
+
+</main><div id="toast" role="status"></div>
+</body></html>
